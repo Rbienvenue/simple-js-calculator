@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <script src="bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container-fluid p-5">
+        <h1 class="text-center">Simple JS calculator</h1>
+        <div class="card border container p-5">
+            <div class="row">
+                <div class="col-3">
+                    <label for="a">num1:</label>
+                <input type="text" class="form-control" id="a">
+                </div>
+                <div class="col-3">
+                    <label for="opp">Operator:</label>
+                    <select id="opp" class="form-select">
+                        <option value="+" class="form-control">+</option>
+                        <option value="-" class="form-control">-</option>
+                        <option value="*" class="form-control">*</option>
+                        <option value="/" class="form-control">/</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <label for="b">num2:</label>
+                <input type="text" class="form-control" id="b">
+                </div>
+                <div class="col-3">
+                    <label for="res">Result</label>
+                    <textarea id="res" class="form-control"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-success mt-5" id="check" onclick="add()">Check</button>
+        </div>
+    </div>
+</body>
+</html>
